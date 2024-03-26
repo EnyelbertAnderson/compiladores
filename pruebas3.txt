@@ -1,0 +1,12 @@
+Principal {
+    funcion factorial(entero n) {
+        si (n == 0) {
+            devolver 1;
+        } sino {
+            devolver n * factorial(n - 1);
+        }
+    }
+
+    entero resultado == factorial(5);
+    mostrar(El factorial de 5 es  + resultado);
+}
