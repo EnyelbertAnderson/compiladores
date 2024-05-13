@@ -1,0 +1,46 @@
+D-> LLAVEI OPCION fin LLAVED
+
+elige-> ASIGNAR | P | control | ''
+
+OPCION-> ASIGNAR | P | control | '' | func
+
+func-> parte ID pareni func1 parend | parte | ''
+
+
+func1-> K coma K
+
+aux-> elige
+
+
+ASIGNAR-> V K elige
+
+V-> entero ID igual | decimal ID igual | siono ID igual | palabra ID igual | letra ID igual | mostrar pareni K parend | '' 
+
+C-> entero OL | palabra OL | letra OL | siono OL | decimal OL | ID OL | num OL | palabra OL | ''
+
+
+
+P-> pareni C parend P | ''
+
+control-> mostrar pareni K parend control | para P LLAVEI control fin LLAVED | para P LLAVEI control fin LLAVED | mientras P LLAVEI control fin LLAVED | sis P LLAVEI control fin LLAVED | ''
+
+
+
+OL-> y C2 | o C2 | igual C2 | suma C2 | resta C2 | multi C2 | dividir C2 | di C2 | DIFERENTE C2 | MENOR C2 | MAYOR C2 | MENORIGUAL C2 | MAYORIGUAL C2 | INCREMENTAR C2 | DECREMENTAR C2 | ''
+
+
+
+
+
+C2-> entero P | siono P | palabr P | letra P | decimal P | ID P | num P | palabra P | si P | no P | ''
+
+
+
+
+C3-> entero OL | siono OL | palabra OL | letra OL | decimal OL | ID OL | num OL | palabra OL | ''
+
+
+
+
+K-> num | ID | si | no
+
